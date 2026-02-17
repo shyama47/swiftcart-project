@@ -17,8 +17,8 @@
   </div>
   <div class="navbar-center hidden lg:flex text-base font-medium">
     <ul class="flex justify-center items-center px-1 gap-5 cursor-pointer ">
-      <li class="mr-6 hover:text-[#6E5CF7]"><a>Home</a></li>
-      <li class="mr-6 hover:text-[#6E5CF7]"><a href="./product.html">Product</a></li>
+      <li class="mr-6 hover:text-[#6E5CF7]"><a href="./index.html">Home</a></li>
+      <li class="mr-6 hover:text-[#6E5CF7]"><a >Product</a></li>
       <li class="mr-6 hover:text-[#6E5CF7]"><a>About</a></li>
       <li class="mr-6 hover:text-[#6E5CF7]"><a>Contact</a></li>
     </ul>
@@ -32,7 +32,7 @@
       <ul
         tabindex="0"
         class="menu menu-sm dropdown-content bg-white/70 backdrop-blur-md  z-10  w-full left-0 right-0 fixed py-5 pl-20 space-y-3 text-xl font-medium">
-         <li><a>Home</a></li>
+         <li><a href="./index.html">Home</a></li>
       <li><a href="">Product</a></li>
       <li><a>About</a></li>
       <li><a>Contact</a></li>
@@ -42,98 +42,26 @@
 </div>
    </header>
 
-   <!-- hero section -->
-   <div
-  class="hero min-h-screen"
-  style="background-image: url(./asset/banner-image.png);"
->
-  <div class="hero-overlay"></div>
-  <div class="hero-content text-white text-left">
-    <div class="-ml-0 md:-ml-40 lg:-ml-72 ">
-      <h1 class="mb-5 text-5xl font-bold">Best Collection Eor You
-</h1>
-      <p class="mb-5 w-9/12">
-        Discover the latest trends in fashion, electronics,and more. Shop with confidence and style at swiftCart.
-      </p>
-      <button class="btn btn-primary">Shop Now</button>
+  <section class="max-w-6xl mx-auto my-20 w-full px-5">
+    <h1 class="text-2xl font-bold text-center" ><span class="text-indigo-700">All</span> Product</h1>
+    <div class="border-b-2 w-50 h-4 mx-auto rounded-box"></div>
+    <div class="flex flex-wrap gap-5 justify-center items-center mt-10" id="catagory-container">
+     <button class="border border-indigo-900 rounded-full px-6 py-2 text-indigo-700 text-xl font-bold">
+        All
+     </button>
     </div>
-  </div>
-</div>
-<!-- feature section -->
- <section class="bg-gray-300 " >
-  <div class=" max-w-6xl mx-auto p-10 mb-10">
-    <h1 class="text-center text-2xl font-bold mb-5">Why Choose Us</h1>
-    <p class="text-center text-gray-500 mb-10">We provide the best shopping experience with top-notch services.</p>
-   
-   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mt-10 space-y-6 md:space-y-0">
+  </section>
 
-  <!-- Card -->
-  <div class="relative bg-white p-6 rounded-xl shadow-sm">
-    <div class="absolute -top-6 left-6 w-14 h-14 bg-[#F3F3FF] border-4 border-white rounded-xl shadow flex items-center justify-center">
-      <i class="fa-solid fa-truck text-2xl text-[#5D5FEF]"></i>
-    </div>
-
-    <div class="pt-6 space-y-2">
-      <h3 class="text-base font-bold">Fast Delivery</h3>
-      <p class="text-gray-400 text-sm">
-        Get your orders delivered to your doorstep quickly and efficiently.
-      </p>
-    </div>
-  </div>
-
-  <!-- Card -->
-  <div class="relative bg-white p-6 rounded-xl shadow-sm">
-    <div class="absolute -top-6 left-6 w-14 h-14 bg-[#F3F3FF] border-4 border-white rounded-xl shadow flex items-center justify-center">
-      <i class="fa-regular fa-headphones text-2xl text-[#5D5FEF]"></i>
-    </div>
-
-    <div class="pt-6 space-y-2">
-      <h3 class="text-base font-bold">24/7 Support</h3>
-      <p class="text-gray-400 text-sm">
-        Our support team is available around the clock to assist you.
-      </p>
-    </div>
-  </div>
-
-  <!-- Card -->
-  <div class="relative bg-white p-6 rounded-xl shadow-sm">
-    <div class="absolute -top-6 left-6 w-14 h-14 bg-[#F3F3FF] border-4 border-white rounded-xl shadow flex items-center justify-center">
-      <i class="fa-solid fa-shield-halved text-2xl text-[#5D5FEF]"></i>
-    </div>
-
-    <div class="pt-6 space-y-2">
-      <h3 class="text-base font-bold">Secure Payment</h3>
-      <p class="text-gray-400 text-sm">
-        Experience safe and secure transactions with encrypted systems.
-      </p>
-    </div>
-  </div>
-
-  <!-- Card -->
-  <div class="relative bg-white p-6 rounded-xl shadow-sm">
-    <div class="absolute -top-6 left-6 w-14 h-14 bg-[#F3F3FF] border-4 border-white rounded-xl shadow flex items-center justify-center">
-      <i class="fa-solid fa-rotate-left text-2xl text-[#5D5FEF]"></i>
-    </div>
-
-    <div class="pt-6 space-y-2">
-      <h3 class="text-base font-bold">Easy Returns</h3>
-      <p class="text-gray-400 text-sm">
-        Not satisfied? Return your products easily within 30 days.
-      </p>
-    </div>
-  </div>
-
-</div>
-
-  </div>
- </section>
- <!-- tranding section -->
   <section class="max-w-6xl mx-auto my-20 w-full px-4"  >
-    <h1 class="text-3xl font-bold mb-10">Trending Now</h1>
-    <div id="product-container" class="grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-2  xl:grid-cols-3 gap-5" >
+    
+    <div id="card-container" class="grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-2  xl:grid-cols-3 gap-5" >
    </div>
   
   </section>
+ 
+
+
+ 
 
  
 
@@ -197,6 +125,6 @@
     </div>
   </div>
 </footer>
-    <script src="./script/script.js"></script>
+    <script src="./script/product.js"></script>
 </body>
 </html>
