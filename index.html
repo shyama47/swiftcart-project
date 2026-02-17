@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwiftCart Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+   <header class="bg-base-100 shadow-sm">
+    <div class="navbar  w-9/12 mx-auto">
+  <div class="navbar-start">
+   <h2 class="text-[#6E5CF7] text-2xl font-bold">swiftCart</h2>
+  </div>
+  <div class="navbar-center hidden lg:flex text-base font-medium">
+    <ul class="flex justify-center items-center px-1 gap-5 cursor-pointer ">
+      <li class="mr-6 hover:text-[#6E5CF7]"><a>Home</a></li>
+      <li class="mr-6 hover:text-[#6E5CF7]"><a href="">Product</a></li>
+      <li class="mr-6 hover:text-[#6E5CF7]"><a>About</a></li>
+      <li class="mr-6 hover:text-[#6E5CF7]"><a>Contact</a></li>
+    </ul>
+  </div>
+  <div class="navbar-end">
+   <i class="fa-solid fa-cart-shopping mr-5 md:mr-5 lg:mr-0 text-xl hover:text-[#6E5CF7]"></i>
+    <div class="dropdown">
+      <div tabindex="0" role="button" class="text-xl lg:hidden">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <ul
+        tabindex="0"
+        class="menu menu-sm dropdown-content bg-white/70 backdrop-blur-md  z-10  w-full left-0 right-0 fixed py-5 pl-20 space-y-3 text-xl font-medium">
+         <li><a>Home</a></li>
+      <li><a href="">Product</a></li>
+      <li><a>About</a></li>
+      <li><a>Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+   </header>
+
+   <!-- hero section -->
+   <div
+  class="hero min-h-screen"
+  style="background-image: url(./asset/banner-image.png);"
+>
+  <div class="hero-overlay"></div>
+  <div class="hero-content text-white text-left">
+    <div class="-ml-0 md:-ml-40 lg:-ml-72 ">
+      <h1 class="mb-5 text-5xl font-bold">Best Collection Eor You
+</h1>
+      <p class="mb-5 w-9/12">
+        Discover the latest trends in fashion, electronics,and more. Shop with confidence and style at swiftCart.
+      </p>
+      <button class="btn btn-primary">Shop Now</button>
+    </div>
+  </div>
+</div>
+<!-- feature section -->
+ <section class="bg-gray-300 " >
+  <div class=" w-11/12 mx-auto p-10 mb-10">
+    <h1 class="text-center text-2xl font-bold mb-5">Why Choose Us</h1>
+    <p class="text-center text-gray-500">We provide the best shopping experience with top-notch services.</p>
+   <div class="grid grid-cols-1 sm:grid sm:grid-cols-2 md:grid md:grid-cols-3 lg:grid lg:grid-cols-4 mt-7 space-y-8 sm:gap-10 md:gap-10 lg:gap-5">
+     <div class="relative bg-white p-8 rounded-xl">
+     
+  <div class="absolute -top-6 w-16 h-16 bg-[#F3F3FF] border-[4px]  border-white rounded-[22px] shadow-lg flex items-center justify-center"> 
+    <i class="fa-solid fa-truck text-3xl text-[#5D5FEF]"></i> 
+  </div>
+
+      <div class="w-10/12 pt-5 space-y-2">
+        <h3 class="text-base font-bold">Fast Delivery</h3>
+      <p class="text-gray-400">Get your orders delivered to your doorstep quickly and efficiently.</p>
+      </div>
+    </div>
+     <div class="relative bg-white p-8 rounded-xl">
+     
+  <div class="absolute -top-6 w-16 h-16 bg-[#F3F3FF] border-[4px]  border-white rounded-[22px] shadow-lg flex items-center justify-center"> 
+    <i class="fa-regular fa-headphones text-3xl text-[#5D5FEF]"></i> 
+  </div>
+
+      <div class="w-10/12 pt-5 space-y-2">
+        <h3 class="text-base font-bold">24/7 Support</h3>
+      <p class="text-gray-400">Our support team is available
+around the clock to assist you.</p>
+      </div>
+    </div>
+     <div class="relative bg-white p-8 rounded-xl">
+     
+  <div class="absolute -top-6 w-16 h-16 bg-[#F3F3FF] border-[4px]  border-white rounded-[22px] shadow-lg flex items-center justify-center"> 
+    <i class="fa-solid fa-shield-halved text-3xl text-[#5D5FEF]"></i> 
+  </div>
+
+      <div class="w-10/12 pt-5 space-y-2">
+        <h3 class="text-base font-bold">Secure Payment</h3>
+      <p class="text-gray-400">Experience safe and secure
+transactions with our
+encrypted payment systems.</p>
+      </div>
+    </div>
+     <div class="relative bg-white p-8 rounded-xl">
+     
+  <div class="absolute -top-6 w-16 h-16 bg-[#F3F3FF] border-[4px]  border-white rounded-[22px] shadow-lg flex items-center justify-center"> 
+    <i class="fa-solid fa-rotate-left text-3xl text-[#5D5FEF]"></i> 
+  </div>
+
+      <div class="w-10/12 pt-5 space-y-2">
+        <h3 class="text-base font-bold">Easy Returns</h3>
+      <p class="text-gray-400">Not satisfied? Return your
+products easily within 30
+days.</p>
+      </div>
+    </div>
+   </div>
+  </div>
+ </section>
+    <script src="./script/script.js"></script>
+</body>
+</html>
